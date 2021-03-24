@@ -1,0 +1,109 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-28-93506711287e>, line 59)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[1;36m  File \u001b[1;32m\"<ipython-input-28-93506711287e>\"\u001b[1;36m, line \u001b[1;32m59\u001b[0m\n\u001b[1;33m    else escolha == '5':\u001b[0m\n\u001b[1;37m         ^\u001b[0m\n\u001b[1;31mSyntaxError\u001b[0m\u001b[1;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\\n******************* Python Calculator *******************\")\n",
+    "\n",
+    "#1- definir a função adição;\n",
+    "def add(x,y):\n",
+    "    return x+y\n",
+    "\n",
+    "#2- definir a função subtrair;\n",
+    "def subtract(x,y):\n",
+    "    return x-y\n",
+    "\n",
+    "#3- definir a função multiplicação;\n",
+    "def multiply(x,y):\n",
+    "    return x*y\n",
+    "\n",
+    "#4- definir a função divide;\n",
+    "def divide(x,y):\n",
+    "    return x/y\n",
+    "\n",
+    "print(\"\\nSelecione o numero da operação desejada: \\n\")\n",
+    "print(\"1 - Soma\")\n",
+    "print(\"2 - Subtração\")\n",
+    "print(\"3 - Multiplicação\")\n",
+    "print(\"4 - Divisão\")\n",
+    " \n",
+    "# escolha da opção\n",
+    "escolha = input(\"\\nDigite sua opção (1/2/3/4): \")\n",
+    "\n",
+    "\n",
+    "#declarando a variavel pra receber o numero;\n",
+    "num1 = int(input(\"\\nDigite o primeiro numero: \"))\n",
+    "num2 = int(input(\"\\nDigite o segundo numero: \"))\n",
+    "\n",
+    "# 1-soma;\n",
+    "if escolha == '1':\n",
+    "    print(\"\\n\") #quebra de linha;\n",
+    "    print(num1, \"+\", num2, \"=\", add(num1,num2))\n",
+    "    print(\"\\n\") #quebra de linha;\n",
+    "\n",
+    "# 2-Subtração;\n",
+    "elif escolha == '2':\n",
+    "    print(\"\\n\")\n",
+    "    print(num1,\"-\",num2,\"=\", subtract(num1,num2))\n",
+    "    print(\"\\n\")\n",
+    "    \n",
+    "# 3- Multiplicação;\n",
+    "elif escolha == '3':\n",
+    "    print(\"\\n\")\n",
+    "    print(num1, \"*\", num2, \"=\", multiply(num1,num2))\n",
+    "    print(\"\\n\")\n",
+    "    \n",
+    "# 4- Divisão;\n",
+    "elif escolha == '4':\n",
+    "    print(\"\\n\")\n",
+    "    print(num1, \"/\", num2, \"=\", divide(num1,num2))\n",
+    "    print(\"\\n\")\n",
+    "    \n",
+    "# opção errada;\n",
+    "else escolha == '5':\n",
+    "    print(\"\\n\")\n",
+    "    print(\"oopção sair\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
